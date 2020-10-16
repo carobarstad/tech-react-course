@@ -27,6 +27,9 @@ export default function Router() {
           <Route path="/characterList">
             <CharacterDetails />
           </Route>
+          <Route path="/character/?:id">
+            <CharacterDetails />
+          </Route>
           <Route path="/search">
             <Search />
           </Route>

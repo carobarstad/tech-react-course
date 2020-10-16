@@ -37,7 +37,7 @@ const CharacterList = () => {
     <div>
       <ul>
         {characters.map((character: ICharacter) => {
-          return <CharacterDetails {...character} />;
+          return <CharacterDetails key={character.name} {...character} />;
         })}
       </ul>
       <br />
