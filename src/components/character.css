@@ -1,3 +1,8 @@
 .characterDetails {
   margin: 20px 0;
 }
+
+.characterName {
+  font-weight: 500;
+  font-size: 26px;
+}

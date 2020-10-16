@@ -7,7 +7,7 @@ import './character.css';
 const CharacterDetails = ({ name, height, birth_year, url }: ICharacter) => {
   return (
     <div className="characterDetails">
-      <div>{name}</div>
+      <div className="characterName">{name}</div>
       <div>Height: {height} cm</div>
       <div>Born year: {birth_year}</div>
       <Link to={url}>Link to character page</Link>
