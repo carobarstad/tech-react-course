@@ -3,11 +3,12 @@ import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import Home from '../view/Home';
 import CharacterDetails from '../view/CharacterDetails';
 import Search from '../view/Search';
+import './router.css';
 
 export default function Router() {
   return (
     <BrowserRouter>
-      <div>
+      <div className="router">
         <nav>
           <ul>
             <li>
