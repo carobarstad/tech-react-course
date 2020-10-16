@@ -13,6 +13,8 @@
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  animation-name: opacity;
+  animation-duration: 3s;
 }
 
 .character {
@@ -28,4 +30,9 @@
   border: 1px solid white;
   background: black;
   color: white;
+}
+
+@keyframes opacity {
+  from {opacity: 0%;}
+  to {opacity: 100%}
 }
