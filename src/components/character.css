@@ -6,3 +6,11 @@
   font-weight: 500;
   font-size: 26px;
 }
+
+.characterImage {
+  border: 2px solid white;
+}
+
+.characterDetails {
+  padding: 20px 0;
+}

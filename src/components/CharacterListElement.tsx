@@ -27,7 +27,7 @@ const CharacterListElement = ({
   return (
     <div className="characterDetails">
       <div className="characterName">{name}</div>
-      <img src={imgSrc} alt="Portrait" />
+      <img className="characterImage" src={imgSrc} alt="Portrait" />
       <div>Height: {height} cm</div>
       <div>Born year: {birth_year}</div>
       <Link to={`character/id/${id}`}>Link to character page</Link>

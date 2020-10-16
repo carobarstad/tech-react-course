@@ -5,13 +5,13 @@ import { useParams } from 'react-router-dom';
 import { getSingleCharacter } from '../api/apis';
 import { ICharacter } from '../interface/ICharactersResponse';
 import IGetSingleCharacter from '../interface/IGetSingleCharacter';
+import images from '../images/images';
 
 const CharacterDetails = () => {
   const [character, setCharacter] = useState<ICharacter | null>(null);
   const { id } = useParams();
 
   const handleResponse = (characterResponse: ICharacter) => {
-    console.log(characterResponse);
     if (characterResponse) {
       setCharacter(characterResponse);
     }
@@ -27,12 +27,17 @@ const CharacterDetails = () => {
 
   if (character) {
     return (
-      <>
+      <div className="characterDetails">
+        <img
+          className="characterImage"
+          src={images[character.name]}
+          alt={character.name}
+        />
         <div>{character.name}</div>
         <div>{character.gender}</div>
         <div>{character.mass}</div>
         <div>{character.hair_color}</div>
-      </>
+      </div>
     );
   }
 

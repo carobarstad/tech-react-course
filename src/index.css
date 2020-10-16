@@ -17,3 +17,9 @@ code {
 a {
   color: yellow;
 }
+
+img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
