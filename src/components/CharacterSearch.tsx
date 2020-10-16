@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
 import { searchCharacters } from '../api/apis';
-import ICharactersResponse from '../interface/ICharactersResponse';
+import ICharactersResponse, {
+  ICharacter
+} from '../interface/ICharactersResponse';
 import ISearchCharacters from '../interface/ISearchCharacters';
+import CharacterDetails from './CharacterDetails';
 
 const RecipeSearch = () => {
   const [searchString, setSearchString] = useState<string>('');
+  const [characters, setCharacters] = useState<Array<ICharacter>>([]);
 
   const handleResponse = (charactersResponse: ICharactersResponse) => {
-    console.log(charactersResponse);
+    if (charactersResponse && charactersResponse.results)
+      setCharacters(charactersResponse.results);
   };
 
   const handleSubmit = () => {
@@ -25,17 +30,24 @@ const RecipeSearch = () => {
 
   return (
     <div>
-      <label htmlFor="characterSearch">
-        <input
-          id="characterSearch"
-          type="text"
-          name="characterSearch"
-          onChange={(input) => handleChange(input)}
-        />
-      </label>
-      <button type="button" onClick={handleSubmit}>
-        Søk
-      </button>
+      <div>
+        <label htmlFor="characterSearch">
+          <input
+            id="characterSearch"
+            type="text"
+            name="characterSearch"
+            onChange={(input) => handleChange(input)}
+          />
+        </label>
+        <button type="button" onClick={handleSubmit}>
+          Søk
+        </button>
+      </div>
+      <div>
+        {characters.map((character) => {
+          return <CharacterDetails {...character} />;
+        })}
+      </div>
     </div>
   );
 };
