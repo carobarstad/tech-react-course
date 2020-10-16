@@ -17,6 +17,7 @@ const RecipeSearch = () => {
   };
 
   const handleSubmit = () => {
+    if (searchString === '') return;
     const charactersRequest: ISearchCharacters = {
       searchString,
       handleResponse
