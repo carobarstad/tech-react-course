@@ -32,15 +32,21 @@ const RecipeSearch = () => {
   return (
     <div className="character">
       <div>
+        <div>Søk etter en karakter!</div>
         <label htmlFor="characterSearch">
           <input
+            className="characterInput"
             id="characterSearch"
             type="text"
             name="characterSearch"
             onChange={(input) => handleChange(input)}
           />
         </label>
-        <button type="button" onClick={handleSubmit}>
+        <button
+          className="characterButton"
+          type="button"
+          onClick={handleSubmit}
+        >
           Søk
         </button>
       </div>
