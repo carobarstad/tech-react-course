@@ -4,7 +4,7 @@ import ICharactersResponse, {
   ICharacter
 } from '../interface/ICharactersResponse';
 import ISearchCharacters from '../interface/ISearchCharacters';
-import CharacterDetails from './CharacterDetails';
+import CharacterListElement from './CharacterListElement';
 
 const RecipeSearch = () => {
   const [searchString, setSearchString] = useState<string>('');
@@ -45,7 +45,7 @@ const RecipeSearch = () => {
       </div>
       <div>
         {characters.map((character) => {
-          return <CharacterDetails {...character} />;
+          return <CharacterListElement {...character} />;
         })}
       </div>
     </div>
