@@ -5,6 +5,7 @@ import ICharactersResponse, {
 } from '../interface/ICharactersResponse';
 import ISearchCharacters from '../interface/ISearchCharacters';
 import CharacterListElement from './CharacterListElement';
+import './character.css';
 
 const RecipeSearch = () => {
   const [searchString, setSearchString] = useState<string>('');
@@ -29,7 +30,7 @@ const RecipeSearch = () => {
   };
 
   return (
-    <div>
+    <div className="character">
       <div>
         <label htmlFor="characterSearch">
           <input

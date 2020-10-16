@@ -25,7 +25,7 @@ const CharacterListElement = ({
   const imgSrc = images[name];
 
   return (
-    <div className="characterDetails">
+    <div className="character">
       <div className="characterName">{name}</div>
       <img className="characterImage" src={imgSrc} alt="Portrait" />
       <div>Height: {height} cm</div>

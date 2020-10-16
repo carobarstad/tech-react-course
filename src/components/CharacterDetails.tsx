@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import { getSingleCharacter } from '../api/apis';
 import { ICharacter } from '../interface/ICharactersResponse';
 import IGetSingleCharacter from '../interface/IGetSingleCharacter';
-import images from '../images/images';
+import CharacterListElement from './CharacterListElement';
 
 const CharacterDetails = () => {
   const [character, setCharacter] = useState<ICharacter | null>(null);
@@ -26,19 +26,7 @@ const CharacterDetails = () => {
   }, [id]);
 
   if (character) {
-    return (
-      <div className="characterDetails">
-        <img
-          className="characterImage"
-          src={images[character.name]}
-          alt={character.name}
-        />
-        <div>{character.name}</div>
-        <div>{character.gender}</div>
-        <div>{character.mass}</div>
-        <div>{character.hair_color}</div>
-      </div>
-    );
+    return <CharacterListElement {...character} />;
   }
 
   return <div>No character found :(</div>;
