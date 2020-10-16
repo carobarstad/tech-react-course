@@ -6,6 +6,7 @@ import ICharactersResponse, {
 import IGetCharacterList from '../interface/IGetCharacterList';
 import IGetCharacterPage from '../interface/IGetCharacterPage';
 import CharacterListElement from './CharacterListElement';
+import './character.css';
 
 const CharacterList = () => {
   const [characters, setCharacters] = useState<Array<ICharacter>>([]);
@@ -41,7 +42,7 @@ const CharacterList = () => {
         })}
       </ul>
       <br />
-      <button type="button" onClick={handleNextClick}>
+      <button className="next-button" type="button" onClick={handleNextClick}>
         Next
       </button>
     </div>

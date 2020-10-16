@@ -36,3 +36,8 @@
   from {opacity: 0%;}
   to {opacity: 100%}
 }
+
+.next-button {
+  height: 30px;
+  width: 60px;
+}
