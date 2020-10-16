@@ -5,7 +5,7 @@ import ICharactersResponse, {
 } from '../interface/ICharactersResponse';
 import IGetCharacterList from '../interface/IGetCharacterList';
 import IGetCharacterPage from '../interface/IGetCharacterPage';
-import CharacterDetails from './CharacterDetails';
+import CharacterListElement from './CharacterListElement';
 
 const CharacterList = () => {
   const [characters, setCharacters] = useState<Array<ICharacter>>([]);
@@ -37,7 +37,7 @@ const CharacterList = () => {
     <div>
       <ul>
         {characters.map((character: ICharacter) => {
-          return <CharacterDetails key={character.name} {...character} />;
+          return <CharacterListElement key={character.name} {...character} />;
         })}
       </ul>
       <br />

@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import Home from '../view/Home';
-import CharacterDetails from '../view/CharacterDetails';
+import CharacterDetails from '../components/CharacterDetails';
 import Search from '../view/Search';
 import './router.css';
+import CharacterList from '../components/CharacterList';
 
 export default function Router() {
   return (
@@ -25,7 +26,7 @@ export default function Router() {
 
         <Switch>
           <Route path="/characterList">
-            <CharacterDetails />
+            <CharacterList />
           </Route>
           <Route path="/character/?:id">
             <CharacterDetails />
