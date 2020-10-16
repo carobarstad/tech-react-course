@@ -1,4 +1,8 @@
-export default {
+type tCharNames = {
+  [key: string]: string;
+};
+
+const images: tCharNames = {
   'Luke Skywalker':
     'https://pbs.twimg.com/profile_images/680269671073988608/9seMbtxC_400x400.jpg',
   'C-3PO':
@@ -162,3 +166,5 @@ export default {
   'Tion Medon':
     'https://vignette.wikia.nocookie.net/starwars/images/e/e8/TionMedonchron.jpg/revision/latest?cb=20070120141520'
 };
+
+export default images;
