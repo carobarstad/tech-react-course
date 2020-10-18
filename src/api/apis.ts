@@ -1,7 +1,6 @@
 import constants from '../utils/constants';
 import ISearchCharacters from '../interface/ISearchCharacters';
 import IGetCharacterList from '../interface/IGetCharacterList';
-import IGetCharacterPage from '../interface/IGetCharacterPage';
 import IGetSingleCharacter from '../interface/IGetSingleCharacter';
 
 export async function searchCharacters({
@@ -30,14 +29,8 @@ export async function getSingleCharacter({
   handleResponse(data);
 }
 
-export async function getCharacterPage({
-  pageNumber,
-  handleResponse
-}: IGetCharacterPage) {
-  const response = await fetch(
-    `${constants.characterListUrl}?page=${pageNumber}`
-  );
-  const data = await response.json();
-  handleResponse(data);
+export async function getCharacterPage() {
+  // TODO Oppgave 6 | Hint: Bruk IGetCharacterPage-interfacet. Eksempel-endepunkt: https://swapi.dev/api/people/?page=1
 }
+
 export default searchCharacters;

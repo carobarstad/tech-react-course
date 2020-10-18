@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { getCharacterList, getCharacterPage } from '../api/apis';
+import { getCharacterList } from '../api/apis';
 import ICharactersResponse, {
   ICharacter
 } from '../interface/ICharactersResponse';
 import IGetCharacterList from '../interface/IGetCharacterList';
-import IGetCharacterPage from '../interface/IGetCharacterPage';
 import CharacterListElement from './CharacterListElement';
 import './character.css';
 
 const CharacterList = () => {
   const [characters, setCharacters] = useState<Array<ICharacter>>([]);
-  const [pageNumber, setPageNumber] = useState<number>(1);
 
   const handleResponse = (characterResponse: ICharactersResponse) => {
     if (characterResponse && characterResponse.results)
@@ -18,13 +16,7 @@ const CharacterList = () => {
   };
 
   const handleNextClick = () => {
-    const nextPageNumber = pageNumber + 1;
-    const characterPageRequest: IGetCharacterPage = {
-      pageNumber: nextPageNumber,
-      handleResponse
-    };
-    getCharacterPage(characterPageRequest);
-    setPageNumber(pageNumber + 1);
+    // TODO Oppgave 6 | Hint: bruk IGetCharacterPage og apis.getCharacterPage
   };
 
   useEffect(() => {
