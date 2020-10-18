@@ -6,5 +6,6 @@ Hint: Hver "page" i apiet returnerer en liste av characters. Når man trykker p�
 Start her: CharacterList.tsx og apis.ts
 
 ### Ekstra:
-Sørg for at den siste siden ikke feiler når vi ikke finner flere resultater.
-Lag en "forrige"-knapp også.
+1. Sørg for at den siste siden ikke feiler når vi ikke finner flere resultater.
+
+2. Lag en "forrige"-knapp også.
