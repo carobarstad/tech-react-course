@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 import React, { useState, useEffect } from 'react';
 import './character.css';
 import { useParams } from 'react-router-dom';
@@ -7,13 +6,13 @@ import { ICharacter } from '../interface/ICharactersResponse';
 import IGetSingleCharacter from '../interface/IGetSingleCharacter';
 import CharacterListElement from './CharacterListElement';
 
-interface IUseParams = {
+interface IUseParams {
   id: string;
 }
 
 const CharacterDetails = () => {
   const [character, setCharacter] = useState<ICharacter | null>(null);
-  const { id } = useParams();
+  const { id } = useParams<IUseParams>();
 
   const handleResponse = (characterResponse: ICharacter) => {
     if (characterResponse) {
