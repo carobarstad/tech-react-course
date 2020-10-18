@@ -7,7 +7,7 @@ import ISearchCharacters from '../interface/ISearchCharacters';
 import CharacterListElement from './CharacterListElement';
 import './character.css';
 
-const RecipeSearch = () => {
+const CharacterSearch = () => {
   const [searchString, setSearchString] = useState<string>('');
   const [characters, setCharacters] = useState<Array<ICharacter>>([]);
 
@@ -60,4 +60,4 @@ const RecipeSearch = () => {
   );
 };
 
-export default RecipeSearch;
+export default CharacterSearch;
