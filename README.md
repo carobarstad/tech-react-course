@@ -1,13 +1,19 @@
-# Oppgave 3
-Start her: Routes.tsx, CharacterDetails.tsx
+# Oppgave 2
+Denne oppgaven går ut på å sette opp ESLint. Det meste har blitt gjort på forhånd, og det er viktig at du prøver å sette deg inn i hvordan ting henger sammen. Når det er sagt, så er det et par ting du er nødt til å gjøre.
 
-1. Bli kjent med Routing (Route og Switch) og Navigasjon med nav-elementet. Sørg for at dere skjønner hva forskjellen er. Se på flere eksempler til hva man kan gjøre med routing (https://reactrouter.com/web/guides/quick-start). 
+1. Vi har lagt inn .eslintrc.js, .prettierrc.js. Disse to filene inneholder oppsett og regler for ESLint og Prettier. 
 
-2. Legg til en ny route som router til /character/:id, og rendrer CharacterDetails.tsx fra Oppgave 1, som ikke er en del av navigasjonen. 
+2. For at lintingen skal fungere i Visual Studio Code, så må du installere "ESLint plugin". Klikk 'Extensions' i venstre marg, og søk etter 'ESLint' (den med cirka 11m nedlastinger) - Installer denne.
 
-3. For å dynamisk kunne velge andre karakterer enn bare '1' (som vi hardkode inn i Oppgave 1), så må vi bruke useParams<>() for å hente ut id fra url. Se i CharacterDetails.tsx. Sjekk at dette fungerer ved å gå til "http://localhost:3000/character/1" i nettleseren din (prøv med andre tall enn '1' for å se andre karakterer (max er 80-og noe i apiet)). Kan du tenke deg hvorfor vi ikke legger til character-routen i navigasjonen?
+3. For at lintingen skal skje automatisk når du lagrer med 'ctrl + s' så må du redigere settings.json-filen til VSCode og lime inn følgende:
 
-Hint: Se hvordan dette har blitt gjort med Home-routen. 
+Klikk på File->Preferences->settings. Søk etter 'ESLint'. Nesten øverst så vil det stå "Edit in settings.json", klikk den. Lim inn:
+
+```
+"editor.formatOnSave": false,
+"editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+}
+```
 
 ### Ekstra:
-Vi skal i de neste oppgavene lage flere routes, som også skal være en del av navigasjonen. Hvis dere blir raskt ferdig med denne oppgaven, og har lest litt om react-router-dom, så kan dere legge til en ny route som kan navigeres til, og fylle denne siden med noe interessant. 
