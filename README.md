@@ -7,7 +7,7 @@ Start her: Routes.tsx, CharacterDetails.tsx
 
 3. Legg til en ny route som router til /character/:id, og rendrer CharacterDetails.tsx fra Oppgave 1, som ikke er en del av navigasjonen. 
 
-4. For å dynamisk kunne velge andre karakterer enn bare '1' (som vi hardkode inn i Oppgave 1), så må vi bruke useParams<>() for å hente ut id fra url. Se i CharacterDetails.tsx. Sjekk at dette fungerer ved å gå til "http://localhost:3000/character/1" i nettleseren din (prøv med andre tall enn '1' for å se andre karakterer (max er 80-og noe i apiet)). Kan du tenke deg hvorfor vi ikke legger til character-routen i navigasjonen?
+4. For å dynamisk kunne velge andre karakterer enn bare '1' (som vi hardkodet inn i Oppgave 1), så må vi bruke useParams<>() for å hente ut id fra url. Se i CharacterDetails.tsx. Sjekk at dette fungerer ved å gå til "http://localhost:3000/character/1" i nettleseren din (prøv med andre tall enn '1' for å se andre karakterer (max er 80-og noe i apiet)). Kan du tenke deg hvorfor vi ikke legger til character-routen i navigasjonen?
 
 Hint: Se hvordan dette har blitt gjort med Home-routen. 
 
