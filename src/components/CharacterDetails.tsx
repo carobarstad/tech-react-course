@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './character.css';
 import { useParams } from 'react-router-dom';
-import { getSingleCharacter } from '../api/apis';
+import getSingleCharacter from '../api/apis';
 import { ICharacter } from '../interface/ICharactersResponse';
 import IGetSingleCharacter from '../interface/IGetSingleCharacter';
 import CharacterListElement from './CharacterListElement';

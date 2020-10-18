@@ -3,7 +3,6 @@ import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import Home from '../view/Home';
 import CharacterDetails from '../components/CharacterDetails';
 import './router.css';
-import CharacterList from '../components/CharacterList';
 
 export default function Router() {
   return (
@@ -18,9 +17,7 @@ export default function Router() {
         </nav>
 
         <Switch>
-          <Route path="/character/:id">
-            <CharacterDetails />
-          </Route>
+          {/* Oppgave 3. Sett inn en route til /character/:id */}
           <Route exact Path="/">
             <Home />
           </Route>
