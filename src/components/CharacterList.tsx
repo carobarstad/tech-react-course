@@ -8,26 +8,21 @@ import CharacterListElement from './CharacterListElement';
 import './character.css';
 
 const CharacterList = () => {
+  // TODO Oppgave 4. Bruk variabelen under til å lagre info om characters.
   const [characters, setCharacters] = useState<Array<ICharacter>>([]);
 
   const handleResponse = (characterResponse: ICharactersResponse) => {
-    if (characterResponse && characterResponse.results)
-      setCharacters(characterResponse.results);
+    // TODO Oppgave 4. Lagre resultatene som vi får fra charactersResponse. Hint: Se hva ICharactersResponse inneholder.
   };
 
   useEffect(() => {
-    const characterListRequest: IGetCharacterList = {
-      handleResponse
-    };
-    getCharacterList(characterListRequest);
+    // TODO Oppgave 4. Fetch karakterer fra én side. Hint: Bruk IGetCharacterList og api.getCharacterList
   }, []);
 
   return (
     <div>
       <ul>
-        {characters.map((character: ICharacter) => {
-          return <CharacterListElement key={character.name} {...character} />;
-        })}
+        {/* TODO Oppgave 4. Render characters. Hint: Bruk characters.map() */}
       </ul>
     </div>
   );
