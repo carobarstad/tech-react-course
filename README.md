@@ -1,5 +1,5 @@
 # Oppgave 1
-I denne oppgaven skal vi bli kjent med strukturen på applikasjonen, samt implementere vår første hoved-komponenter. Disse komponentene skal følge oss gjennom resten av kursets oppgaver.
+I denne oppgaven skal vi bli kjent med strukturen på applikasjonen, samt implementere våre første hoved-komponenter. Disse komponentene skal følge oss gjennom resten av kursets oppgaver.
 
 Vi skal fetche en starwars-karakter fra swapi-apiet. Dette kallet må håndteres, responsen må lagres, og vi skal displaye informasjon om karakteren.
 
