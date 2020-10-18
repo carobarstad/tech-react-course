@@ -2,7 +2,7 @@
 
 Denne oppgaven går ut på å sette opp ESLint. Det meste har blitt gjort på forhånd, og det er viktig at du prøver å sette deg inn i hvordan ting henger sammen. Når det er sagt, så er det et par ting du er nødt til å gjøre.
 
-1. Kjør npm install for å laste ned dependenciene i package.json-fila.
+1. Kjør 'npm install' for å laste ned dependenciene i package.json-fila.
 
 2. Vi har lagt inn .eslintrc.js, .prettierrc.js. Disse to filene inneholder oppsett og regler for ESLint og Prettier. 
 
