@@ -5,30 +5,21 @@ import { ICharacter } from '../interface/ICharactersResponse';
 import IGetSingleCharacter from '../interface/IGetSingleCharacter';
 import CharacterListElement from './CharacterListElement';
 
-interface IUseParams {
-  id: string;
-}
-
 const CharacterDetails = () => {
+  // TODO Oppgave 1. Bruk denne til å lagre karakteren
   const [character, setCharacter] = useState<ICharacter | null>(null);
   const id = '1';
 
   const handleResponse = (characterResponse: ICharacter) => {
-    if (characterResponse) {
-      setCharacter(characterResponse);
-    }
+    // TODO Oppgave 1. Lagre karakteren som vi får fra characterResponse.
   };
 
   useEffect(() => {
-    const characterPageRequest: IGetSingleCharacter = {
-      id,
-      handleResponse
-    };
-    getSingleCharacter(characterPageRequest);
+    // TODO Oppgave 1. Gjør et fetch-kall for å hente en karakter. Hint: Bruk IGetSingleCharacter og apis.getSingleCharacter()
   }, [id]);
 
   if (character) {
-    return <CharacterListElement {...character} />;
+    // TODO Oppgave 1. Render karakteren. Hint: Bruk <CharacterListElement />
   }
 
   return <div>No character found :(</div>;

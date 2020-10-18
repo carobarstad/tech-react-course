@@ -4,7 +4,8 @@ import { ICharacter } from '../interface/ICharactersResponse';
 import './character.css';
 import images from '../images/images';
 
-const CharacterListElement = ({ name, height, birth_year }: ICharacter) => {
+const CharacterListElement = () => {
+  // TODO Oppgave 1. Ta i mot og destrukturer de nødvendige feltene i props med ICharacter-interfacet.
   const imgSrc = images[name];
 
   return (

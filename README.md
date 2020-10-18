@@ -1,27 +1,11 @@
-# Oppgave 2
+# Oppgave 1
+I denne oppgaven skal vi bli kjent med strukturen på applikasjonen, samt implementere vår første hoved-komponenter. Disse komponentene skal følge oss gjennom resten av kursets oppgaver.
 
-Denne oppgaven går ut på å sette opp ESLint. Det meste har blitt gjort på forhånd, og det er viktig at du prøver å sette deg inn i hvordan ting henger sammen. Når det er sagt, så er det et par ting du er nødt til å gjøre.
+Vi skal fetche en starwars-karakter fra swapi-apiet. Dette kallet må håndteres, responsen må lagres, og vi skal displaye informasjon om karakteren.
 
-1. Kjør 'npm install' for å laste ned dependenciene i package.json-fila.
-
-2. Vi har lagt inn .eslintrc.js, .prettierrc.js. Disse to filene inneholder oppsett og regler for ESLint og Prettier. 
-
-3. For at lintingen skal fungere i Visual Studio Code, så må du installere "ESLint plugin". Klikk 'Extensions' i venstre marg, og søk etter 'ESLint' (den med cirka 11m nedlastinger) - Installer denne.
-
-4. For at lintingen skal skje automatisk når du lagrer med 'ctrl + s' så må du redigere settings.json-filen til VSCode og lime inn følgende:
-
-Klikk på File->Preferences->settings. Søk etter 'ESLint'. Nesten øverst så vil det stå "Edit in settings.json", klikk den. Lim inn:
-
-```
-"editor.formatOnSave": false,
-"editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-}
-```
+1. Implementer TODOs i CharacterDetails.tsx og CharacterListElement.tsx slik at vi ser informasjon om starwars-karakteren. 
 
 ### Ekstra:
-Hvis du er nysgjerrig på komplett oppsett så gjorde vi denne kommandoen for å laste ned alle nødvendige dependencies:
+1. Bli kjent med strukturen på applikasjonen. Se igjennom package.json og tsconfig.json for å bli kjent med settings og dependency-filene. Vi skal i de neste oppgavene utvide denne applikasjonen med flere komponenter og mer funksjonalitet.
 
-$ npm install typescript eslint prettier eslint-config-airbnb-typescript-prettier --save-dev
-
-Se https://www.npmjs.com/package/eslint-config-airbnb-typescript-prettier
+2. Implementer en spinner som vises når fetch-kallet vårt laster, og blir borte når vi har fått en response. Spinneren kan lastes ned med "npm install react-spinners". Se https://www.npmjs.com/package/react-spinners for installasjon- og bruks-guide.
