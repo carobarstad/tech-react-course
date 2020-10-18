@@ -30,7 +30,7 @@ const CharacterListElement = ({
       <img className="characterImage" src={imgSrc} alt="Portrait" />
       <div>Height: {height} cm</div>
       <div>Born year: {birth_year}</div>
-      <Link to={`character/id/${id}`}>Link to character page</Link>
+      <Link to={`character/${id}`}>Link to character page</Link>
     </div>
   );
 };
