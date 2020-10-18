@@ -20,7 +20,7 @@ Klikk på File->Preferences->settings. Søk etter 'ESLint'. Nesten øverst så v
 ```
 
 ### Ekstra:
-Hvis du er nysgjerrig på komplett oppsett så gjorde vi denne kommandoen for å laste ned alle nødvendige dependiencies:
+Hvis du er nysgjerrig på komplett oppsett så gjorde vi denne kommandoen for å laste ned alle nødvendige dependencies:
 
 $ npm install typescript eslint prettier eslint-config-airbnb-typescript-prettier --save-dev
 
