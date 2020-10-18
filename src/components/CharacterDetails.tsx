@@ -12,7 +12,8 @@ interface IUseParams {
 
 const CharacterDetails = () => {
   const [character, setCharacter] = useState<ICharacter | null>(null);
-  const { id } = useParams<IUseParams>();
+  // TODO Oppgave 3. Bruk useParams for å hente id fra url i stedet for å hardkode inn '1'. Hint: Bruk IUseParams-interfacet sammen med useParams
+  const id = '1';
 
   const handleResponse = (characterResponse: ICharacter) => {
     if (characterResponse) {
