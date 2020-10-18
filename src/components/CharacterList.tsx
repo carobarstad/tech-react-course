@@ -16,7 +16,7 @@ const CharacterList = () => {
   };
 
   const handleNextClick = () => {
-    // TODO Oppgave 6 | Hint: bruk IGetCharacterPage og apis.getCharacterPage
+    // TODO Oppgave 6
   };
 
   useEffect(() => {

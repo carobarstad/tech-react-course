@@ -30,7 +30,7 @@ export async function getSingleCharacter({
 }
 
 export async function getCharacterPage() {
-  // TODO Oppgave 6 | Hint: Bruk IGetCharacterPage-interfacet. Eksempel-endepunkt: https://swapi.dev/api/people/?page=1
+  // TODO Oppgave 6 | Eksempel-endepunkt: https://swapi.dev/api/people/?page=1
 }
 
 export default searchCharacters;
