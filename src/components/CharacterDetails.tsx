@@ -7,6 +7,10 @@ import { ICharacter } from '../interface/ICharactersResponse';
 import IGetSingleCharacter from '../interface/IGetSingleCharacter';
 import CharacterListElement from './CharacterListElement';
 
+interface IUseParams = {
+  id: string;
+}
+
 const CharacterDetails = () => {
   const [character, setCharacter] = useState<ICharacter | null>(null);
   const { id } = useParams();
