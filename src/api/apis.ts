@@ -3,15 +3,8 @@ import ISearchCharacters from '../interface/ISearchCharacters';
 import IGetCharacterList from '../interface/IGetCharacterList';
 import IGetSingleCharacter from '../interface/IGetSingleCharacter';
 
-export async function searchCharacters({
-  searchString,
-  handleResponse
-}: ISearchCharacters) {
-  const response = await fetch(
-    `${constants.searchCharactersUrl}${searchString}`
-  );
-  const data = await response.json();
-  handleResponse(data);
+export async function searchCharacters() {
+  // TODO Oppgave 5 | Bruk ISearchCharacters-interfacet som input. Eksempel endepunkt: "https://swapi.dev/api/people/?search=Darth", se constants.tsx.
 }
 
 export async function getCharacterList({ handleResponse }: IGetCharacterList) {
@@ -27,10 +20,6 @@ export async function getSingleCharacter({
   const response = await fetch(constants.characterListUrl + id);
   const data = await response.json();
   handleResponse(data);
-}
-
-export async function getCharacterPage() {
-  // TODO Oppgave 6 | Hint: Bruk IGetCharacterPage-interfacet. Eksempel-endepunkt: https://swapi.dev/api/people/?page=1
 }
 
 export default searchCharacters;

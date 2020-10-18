@@ -15,10 +15,6 @@ const CharacterList = () => {
       setCharacters(characterResponse.results);
   };
 
-  const handleNextClick = () => {
-    // TODO Oppgave 6 | Hint: bruk IGetCharacterPage og apis.getCharacterPage
-  };
-
   useEffect(() => {
     const characterListRequest: IGetCharacterList = {
       handleResponse
@@ -33,10 +29,6 @@ const CharacterList = () => {
           return <CharacterListElement key={character.name} {...character} />;
         })}
       </ul>
-      <br />
-      <button className="next-button" type="button" onClick={handleNextClick}>
-        Next
-      </button>
     </div>
   );
 };

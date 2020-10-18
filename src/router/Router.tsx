@@ -18,9 +18,6 @@ export default function Router() {
             <li>
               <Link to="/characterList">Character List</Link>
             </li>
-            <li>
-              <Link to="/search">Search</Link>
-            </li>
           </ul>
         </nav>
 
@@ -30,9 +27,6 @@ export default function Router() {
           </Route>
           <Route path="/character/:id">
             <CharacterDetails />
-          </Route>
-          <Route path="/search">
-            <Search />
           </Route>
           <Route exact Path="/">
             <Home />
