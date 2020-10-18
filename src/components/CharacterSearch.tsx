@@ -1,16 +1,8 @@
-import React, { useState } from 'react';
-import { searchCharacters } from '../api/apis';
-import ICharactersResponse, {
-  ICharacter
-} from '../interface/ICharactersResponse';
-import ISearchCharacters from '../interface/ISearchCharacters';
-import CharacterListElement from './CharacterListElement';
+import React from 'react';
 import './character.css';
 
 const CharacterSearch = () => {
-  // TODO Oppgave 5. Ta i bruk disse state-variablene for å lagre data.
-  const [searchString, setSearchString] = useState<string>('');
-  const [characters, setCharacters] = useState<Array<ICharacter>>([]);
+  // TODO Oppgave 5. Lag state-variabler for å lagre data.
 
   const handleResponse = (charactersResponse: ICharactersResponse) => {
     // TODO Oppgave 5. Lagre resultatene som vi får fra charactersResponse. Hint: Se hva ICharactersResponse inneholder.
@@ -46,9 +38,7 @@ const CharacterSearch = () => {
           Søk
         </button>
       </div>
-      <div>
-        {/* TODO Oppgave 5. Display "CharacterListElement"s. Hint: bruk characters.map() */}
-      </div>
+      <div>{/* TODO Oppgave 5. Display "CharacterListElement"s */}</div>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import constants from '../utils/constants';
-import ISearchCharacters from '../interface/ISearchCharacters';
 import IGetCharacterList from '../interface/IGetCharacterList';
 import IGetSingleCharacter from '../interface/IGetSingleCharacter';
 
