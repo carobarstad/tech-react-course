@@ -5,4 +5,4 @@ Hint: Hver "page" i apiet returnerer en liste av characters. Når man trykker p�
 
 ### Ekstra:
 Sørg for at den siste siden ikke feiler når vi ikke finner flere resultater.
-Lag en "tilbake"-knapp også.
+Lag en "forrige"-knapp også.
