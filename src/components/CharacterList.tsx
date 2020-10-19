@@ -15,10 +15,6 @@ const CharacterList = () => {
       setCharacters(characterResponse.results);
   };
 
-  const handleNextClick = () => {
-    // TODO Oppgave 6
-  };
-
   useEffect(() => {
     const characterListRequest: IGetCharacterList = {
       handleResponse
