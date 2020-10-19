@@ -18,7 +18,7 @@ export default function Router() {
 
         <Switch>
           {/* Oppgave 3. Sett inn en route til /character/:id */}
-          <Route exact Path="/">
+          <Route exact path="/">
             <Home />
           </Route>
         </Switch>
