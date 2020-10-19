@@ -3,7 +3,9 @@ I denne oppgaven skal vi bli kjent med strukturen på applikasjonen, samt implem
 
 Vi skal fetche en starwars-karakter fra swapi-apiet. Dette kallet må håndteres, responsen må lagres, og vi skal displaye informasjon om karakteren.
 
-1. Implementer TODOs i CharacterDetails.tsx og CharacterListElement.tsx slik at vi ser informasjon om starwars-karakteren. 
+1. Kjør 'npm install' for å laste ned dependencies, og deretter 'npm start' for å starte applikasjonen på localhost:3000.
+
+2. Implementer TODOs i CharacterDetails.tsx og CharacterListElement.tsx slik at vi ser informasjon om starwars-karakteren. 
 
 ### Ekstra:
 1. Bli kjent med strukturen på applikasjonen. Se igjennom package.json og tsconfig.json for å bli kjent med settings og dependency-filene. Vi skal i de neste oppgavene utvide denne applikasjonen med flere komponenter og mer funksjonalitet.
